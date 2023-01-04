@@ -107,4 +107,8 @@ extension DetailsViewController: UITableViewDataSource {
         cell.bodyLabel.text = comment.body
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Comments (\(viewModel.comments.value.count))"
+    }
 }
