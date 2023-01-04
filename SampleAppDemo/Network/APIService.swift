@@ -23,14 +23,41 @@ class ApiService: Network {
         provider = MoyaProvider<API> (plugins: [NetworkLoggerPlugin()])
     }
     
-    func getPosts() {
+    func getPosts(completion: @escaping ([Post]) -> Void) {
         provider.request(.getPosts) { (result) in
             switch result {
             case .success(let response):
                 let posts = self.mapper.mapPosts(dataResponse: response.data)
-                print(posts)
+                return completion(posts)
             case .failure(let error):
                 print(error)
+                return completion([])
+            }
+        }
+    }
+    
+    func getUserDetails(id: Int, completion: @escaping (User?) -> Void) {
+        provider.request(.getUser(id: id)) { result in
+            switch result {
+            case .success(let response):
+                let user = self.mapper.mapUser(dataResponse: response.data)
+                return completion(user)
+            case .failure(let error):
+                print(error)
+                return completion(nil)
+            }
+        }
+    }
+    
+    func getCommentsByPostId(id: Int, completion: @escaping ([Comment]) -> Void) {
+        provider.request(.getComments(postId: id)) { result in
+            switch result {
+            case .success(let response):
+                let comments = self.mapper.mapComments(dataResponse: response.data)
+                return completion(comments)
+            case .failure(let error):
+                print(error)
+                return completion([])
             }
         }
     }

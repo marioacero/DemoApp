@@ -10,6 +10,10 @@
 		59DB0DDD7D4B059E41991996 /* Pods_SampleAppDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24085C9E8E66F682A1461688 /* Pods_SampleAppDemoTests.framework */; };
 		8F606EDDDCE8E0B4BD4A9A6D /* Pods_SampleAppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77E30B4795217DCBBB9BF0E /* Pods_SampleAppDemo.framework */; };
 		D05FDD6C97DD9A40BC31D33B /* Pods_SampleAppDemo_SampleAppDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F847008667BAB3215571A7 /* Pods_SampleAppDemo_SampleAppDemoUITests.framework */; };
+		DC1A1F962964DA3C007FDFCE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1F952964DA3C007FDFCE /* User.swift */; };
+		DC1A1F982964F3B9007FDFCE /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1F972964F3B9007FDFCE /* Comment.swift */; };
+		DC1A1F9C2964F9D7007FDFCE /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A1F9A2964F9D7007FDFCE /* CommentsTableViewCell.swift */; };
+		DC1A1F9D2964F9D7007FDFCE /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1A1F9B2964F9D7007FDFCE /* CommentsTableViewCell.xib */; };
 		DC8D95DC2963A20C0000B049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D95DB2963A20C0000B049 /* AppDelegate.swift */; };
 		DC8D95DE2963A20C0000B049 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D95DD2963A20C0000B049 /* SceneDelegate.swift */; };
 		DC8D95E32963A20C0000B049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8D95E12963A20C0000B049 /* Main.storyboard */; };
@@ -28,6 +32,10 @@
 		DCC4989D2963AC7800040838 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4989C2963AC7800040838 /* Constants.swift */; };
 		DCC4989F2963AEEB00040838 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4989E2963AEEB00040838 /* Mapper.swift */; };
 		DCC498A32963B23200040838 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC498A22963B23200040838 /* Post.swift */; };
+		DCC498A72963E52100040838 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC498A62963E52100040838 /* Observable.swift */; };
+		DCC498AA2963EA6A00040838 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC498A82963EA6A00040838 /* HomeTableViewCell.swift */; };
+		DCC498AB2963EA6A00040838 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC498A92963EA6A00040838 /* HomeTableViewCell.xib */; };
+		DCC498AD2963EB1F00040838 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC498AC2963EB1F00040838 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,10 @@
 		A77E30B4795217DCBBB9BF0E /* Pods_SampleAppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleAppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F837E3B3ABCF551942FAB3 /* Pods-SampleAppDemo-SampleAppDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppDemo-SampleAppDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppDemo-SampleAppDemoUITests/Pods-SampleAppDemo-SampleAppDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8A8452D39BC870DE93496E1 /* Pods-SampleAppDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppDemo.debug.xcconfig"; path = "Target Support Files/Pods-SampleAppDemo/Pods-SampleAppDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DC1A1F952964DA3C007FDFCE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC1A1F972964F3B9007FDFCE /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		DC1A1F9A2964F9D7007FDFCE /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		DC1A1F9B2964F9D7007FDFCE /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsTableViewCell.xib; sourceTree = "<group>"; };
 		DC8D95D82963A20C0000B049 /* SampleAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8D95DB2963A20C0000B049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC8D95DD2963A20C0000B049 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +90,10 @@
 		DCC4989C2963AC7800040838 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCC4989E2963AEEB00040838 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		DCC498A22963B23200040838 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DCC498A62963E52100040838 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		DCC498A82963EA6A00040838 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		DCC498A92963EA6A00040838 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		DCC498AC2963EB1F00040838 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAC227316557238893A5933B /* Pods-SampleAppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleAppDemo.release.xcconfig"; path = "Target Support Files/Pods-SampleAppDemo/Pods-SampleAppDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +148,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DC1A1F992964F9BE007FDFCE /* CommentsCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC1A1F9A2964F9D7007FDFCE /* CommentsTableViewCell.swift */,
+				DC1A1F9B2964F9D7007FDFCE /* CommentsTableViewCell.xib */,
+			);
+			path = CommentsCell;
+			sourceTree = "<group>";
+		};
 		DC8D95CF2963A20C0000B049 = {
 			isa = PBXGroup;
 			children = (
@@ -157,11 +182,11 @@
 		DC8D95DA2963A20C0000B049 /* SampleAppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DCC498A52963E51000040838 /* Misc */,
 				DCC498972963AB7B00040838 /* Network */,
 				DCC4988C2963A5FC00040838 /* Models */,
 				DCC4988B2963A5F100040838 /* Views */,
 				DC8D95DB2963A20C0000B049 /* AppDelegate.swift */,
-				DCC4989C2963AC7800040838 /* Constants.swift */,
 				DC8D95DD2963A20C0000B049 /* SceneDelegate.swift */,
 				DC8D95E12963A20C0000B049 /* Main.storyboard */,
 				DC8D95E72963A20C0000B049 /* Assets.xcassets */,
@@ -202,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				DCC498A22963B23200040838 /* Post.swift */,
+				DC1A1F952964DA3C007FDFCE /* User.swift */,
+				DC1A1F972964F3B9007FDFCE /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +236,7 @@
 		DCC4988D2963A61500040838 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DCC498A42963BC9D00040838 /* HomeCell */,
 				DCC4988E2963A64600040838 /* HomeViewController.swift */,
 				DCC498902963A65400040838 /* HomeViewModel.swift */,
 			);
@@ -218,6 +246,7 @@
 		DCC498922963A65C00040838 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				DC1A1F992964F9BE007FDFCE /* CommentsCell */,
 				DCC498932963A66C00040838 /* DetailsViewController.swift */,
 				DCC498952963A67700040838 /* DetailsViewModel.swift */,
 			);
@@ -232,6 +261,25 @@
 				DCC4989E2963AEEB00040838 /* Mapper.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DCC498A42963BC9D00040838 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				DCC498A82963EA6A00040838 /* HomeTableViewCell.swift */,
+				DCC498A92963EA6A00040838 /* HomeTableViewCell.xib */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		DCC498A52963E51000040838 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				DCC4989C2963AC7800040838 /* Constants.swift */,
+				DCC498A62963E52100040838 /* Observable.swift */,
+				DCC498AC2963EB1F00040838 /* Extensions.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,7 +393,9 @@
 			files = (
 				DC8D95EB2963A20C0000B049 /* LaunchScreen.storyboard in Resources */,
 				DC8D95E82963A20C0000B049 /* Assets.xcassets in Resources */,
+				DCC498AB2963EA6A00040838 /* HomeTableViewCell.xib in Resources */,
 				DC8D95E32963A20C0000B049 /* Main.storyboard in Resources */,
+				DC1A1F9D2964F9D7007FDFCE /* CommentsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,14 +523,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC498A72963E52100040838 /* Observable.swift in Sources */,
 				DCC4988F2963A64600040838 /* HomeViewController.swift in Sources */,
+				DCC498AA2963EA6A00040838 /* HomeTableViewCell.swift in Sources */,
 				DCC498912963A65400040838 /* HomeViewModel.swift in Sources */,
+				DC1A1F962964DA3C007FDFCE /* User.swift in Sources */,
+				DC1A1F982964F3B9007FDFCE /* Comment.swift in Sources */,
 				DCC498962963A67700040838 /* DetailsViewModel.swift in Sources */,
+				DC1A1F9C2964F9D7007FDFCE /* CommentsTableViewCell.swift in Sources */,
 				DCC498A32963B23200040838 /* Post.swift in Sources */,
 				DC8D95DC2963A20C0000B049 /* AppDelegate.swift in Sources */,
 				DCC4989F2963AEEB00040838 /* Mapper.swift in Sources */,
 				DCC498942963A66C00040838 /* DetailsViewController.swift in Sources */,
 				DCC4989D2963AC7800040838 /* Constants.swift in Sources */,
+				DCC498AD2963EB1F00040838 /* Extensions.swift in Sources */,
 				DC8D95E62963A20C0000B049 /* SampleAppDemo.xcdatamodeld in Sources */,
 				DCC498992963AB8B00040838 /* API.swift in Sources */,
 				DCC4989B2963AB9A00040838 /* APIService.swift in Sources */,

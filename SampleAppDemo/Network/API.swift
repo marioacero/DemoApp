@@ -11,6 +11,8 @@ import Alamofire
 
 enum API {
     case getPosts
+    case getUser(id: Int)
+    case getComments(postId: Int)
 }
 
 
@@ -26,6 +28,12 @@ extension API: TargetType {
         switch self {
         case .getPosts:
             let endPoint = Constants.posts
+            return endPoint
+        case .getUser(let id):
+            let endPoint =  String(format: Constants.user, id)
+            return endPoint
+        case .getComments(let postId):
+            let endPoint =  String(format: Constants.comments, postId)
             return endPoint
         }
     }

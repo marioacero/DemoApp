@@ -8,9 +8,24 @@
 import Foundation
 
 class HomeViewModel: NSObject {
+    
     private var api: ApiService
+    var posts: Observable<[Post]> = Observable([])
+    
     override init() {
         api = ApiService()
-        api.getPosts()
+    }
+    
+    func fetchPosts() {
+        api.getPosts { [weak self] result in
+            self?.posts.value = result
+        }
+    }
+    
+    func removeNoFavItems() {
+        let favItems = posts.value.filter{
+            $0.isFav == true
+        }
+        posts.value = favItems
     }
 }
